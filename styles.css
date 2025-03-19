@@ -4,7 +4,8 @@
 :root {
     --font-size: 10px;
     --offwhite: #fbfafa;
-    
+    --font-family: "Open Sans", Arial, sans-serif;
+    --font-weight: lighter;    
 }
 
 *,
@@ -19,15 +20,20 @@ body {
     background-color: #fafafa;
     color: #262626;
     padding-bottom: 3rem;
+    
 }
+
+
+.img {
+   display: block;
+
+}
+
 
 .profile-image {
     border: 7px , solid #47887d;
     border-radius: 50%;
-    overflow: hidden;
-    
-
-    
+    overflow: hidden;  
     
 }
 
@@ -36,17 +42,61 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+     align-items: center;
+     padding: 20px;
+     justify-content: space-around;
     
 }
 
+
+
 .profile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    align-content: flex-end;
+    display: flex; 
+    flex-direction: column;
 
 }
+
+.profile-user-settings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn-profile-edit-btn {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-profile-settings-btn {
+
+}
+
+
+.profile-user-name {
+    font-family: "Open sans", Arial, sans-serif;
+    font-weight: lighter;
+   
+    
+}
+
+.profile-stats { 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-stat-count {
+    text-align: center;
+
+}
+
+
+
+
 
 
     
