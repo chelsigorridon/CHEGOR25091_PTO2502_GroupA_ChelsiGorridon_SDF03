@@ -39,6 +39,7 @@ body {
     width: 300px;
     height: 300px;   
     object-fit: cover;
+    float: left;
     
 }
 
@@ -46,27 +47,21 @@ body {
 
 .container {
     width: 50%;
-    margin: 30px auto;
-    
-    
+    margin: 30px auto; 
    
 }
 
 
 
-.profile {
-    display: flex;
+.profile { 
+    display: contents;
      padding-bottom: 20px;
-     align-items: center;
-     gap: 20px;
-     justify-content: space-around;
-     flex-direction: column; 
-     border-bottom: 1px solid #ccc;
      flex: 1;
+    
     
 }
 
-.profile::after {
+.profile::after { 
     content: "";
     display: block;
     clear: both;
@@ -74,13 +69,16 @@ body {
 }
 
 
+
 .profile-user-settings {
     display: flex;
-    justify-content: flex-start;
-    align-items:flex-end;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
     margin-bottom: 10px;
+    margin-top: 20px;
     text-align: left;
-    gap: 5px;
+    gap: 15px;
     
    
 }
@@ -109,16 +107,30 @@ body {
 }
 
 .profile-stats { 
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 7px;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin:auto
+    gap: 15px;
+    
     
 }
 
 .profile-stat-count {
     text-align: center;
 
+}
+
+.profile-bio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    margin: auto;
+    
+    
 }
 
 .gallery {
