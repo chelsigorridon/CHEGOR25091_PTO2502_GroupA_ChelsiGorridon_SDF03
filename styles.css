@@ -26,7 +26,9 @@ body {
 
 .img {
    display: block;
-
+   float: left;
+  
+   
 }
 
 
@@ -35,63 +37,83 @@ body {
     border-radius: 50%;
     overflow: hidden;  
     width: 300px;
-    height: 300px;
-    
+    height: 300px;   
+    object-fit: cover;
     
 }
 
 
 
 .container {
-    display: flex;
-    flex-direction: row;
-     align-items: center;
-     padding: 20px;
-     justify-content: space-around;
+    width: 50%;
+    margin: 30px auto;
     
+    
+   
 }
 
 
 
 .profile {
-    display: flex; 
-    flex-direction: column;
-
+    display: flex;
+     padding-bottom: 20px;
+     align-items: center;
+     gap: 20px;
+     justify-content: space-around;
+     flex-direction: column; 
+     border-bottom: 1px solid #ccc;
+     flex: 1;
+    
 }
 
+.profile::after {
+    content: "";
+    display: block;
+    clear: both;
+    
+}
 
 
 .profile-user-settings {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    align-items:flex-end;
     margin-bottom: 10px;
+    text-align: left;
+    gap: 5px;
+    
+   
 }
 
 .btn-profile-edit-btn {
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 4px 10px;
+    border: 1px solid #171717;
     cursor: pointer;
+    background-color: #fafafa;
+    
 }
 
 .btn-profile-settings-btn {
-
+     border: none;  
+     cursor: pointer;
+     float: left 5px;
+     background-color: #fafafa;
 }
 
 
 .profile-user-name {
     font-family: "Open sans", Arial, sans-serif;
-    font-weight: lighter;
-   
+    font-weight: lighter;  
+    margin-right: 8px;
     
 }
 
 .profile-stats { 
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 10px;
+    gap: 7px;
     margin-bottom: 10px;
+    
 }
 
 .profile-stat-count {
@@ -99,6 +121,42 @@ body {
 
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: 10px;
+    margin: auto;
+    padding: 20px;
+    max-width: 1200px;
+    
+
+}
+
+.gallery-item {
+    background: #ffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1) ;
+        transition: transform 0,2s,box-shadow 0,2s;
+        padding: 15px; 
+        
+}
+
+.gallery-item-type {
+    width: 300px;
+    height: 300px;
+      
+    
+}
+
+.gallery-image {
+   width: 300px;
+   object-fit: fit;
+   
+
+}
 
 
 
