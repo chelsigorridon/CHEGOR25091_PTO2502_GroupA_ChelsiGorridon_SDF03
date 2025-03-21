@@ -5,7 +5,7 @@
     --font-size: 10px;
     --offwhite: #fbfafa;
     --font-family: "Open Sans", Arial, sans-serif;
-    --font-weight: lighter;    
+        
 }
 
 *,
@@ -107,8 +107,9 @@ body {
 
 .profile-user-name {
     font-family: "Open sans", Arial, sans-serif;
-    font-weight: var(--font-weight);  
+    font-weight: lighter ;  
     margin-right: 15px;
+    margin-top: 50px;
     
     
     
@@ -117,7 +118,7 @@ body {
 .profile-stats { 
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: baseline;
     flex-direction: row;
     margin:auto;
     gap: 15px;
@@ -127,18 +128,21 @@ body {
 
 .profile-stat-count {
     text-align: center;
+    
 
 }
 
 .profile-bio {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: baseline;
     flex-direction: row;
     gap: 15px;
-    margin: auto;
-    
-    
+    margin-top: 50px;   
+}
+
+.profile-real-name {
+    font-weight: bold;
 }
 
 
@@ -149,6 +153,7 @@ body {
     max-width: 1200px;
     
     
+    
 
 }
 
@@ -156,14 +161,16 @@ body {
         background: none;
         overflow: hidden;
         text-align: center;       
-        padding: 10px;
+        padding: 10px; 
+        height: auto; 
+        width: auto;
+         
        
 }
 
 
 .gallery-item-type {
-    width: 300px;
-    
+    width: 300px;   
 }
 
 
@@ -173,24 +180,58 @@ body {
    height: 100%;
    object-fit:cover;
    transition: .5s ease; 
+   opacity: 1;
 
 }
 
-.gallery-image:hover {
-    color: #858988;
-}
+ 
+.gallery-item:hover .gallery-image {
+    opacity: 0.7;
+    
+  }
   
 
-.gallery-item-info {
-    
+ .gallery-item-info {       
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.gallery-item-likes, .gallery-item-comments {
-    
-
+.gallery-item-info:hover{
+    align-items: center;
 }
 
 
+.gallery-item-likes,.gallery-item-comments {
+      color: #1d1c1c;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px, dashed #7e7d7d;
+    border-color: #636161;
+    color: #7e7d7d;
+    border-spacing: 5px;
+    animation: spin 2s ease-in-out infinite ;  
+    margin-left: 48%;
+   
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg); }
+    100% {transform: rotate(360deg); }
+  }
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape)
 
 
 
