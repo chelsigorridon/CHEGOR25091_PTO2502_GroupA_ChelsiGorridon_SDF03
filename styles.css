@@ -180,6 +180,7 @@ body {
     transition: opacity 0.3s ease-in-out; 
     margin-left: 90%;
     margin-top: 5%;
+    color: aliceblue;
      
 }                               /*Flexbox was used to move position the contents in this divo */
 
@@ -194,7 +195,7 @@ body {
 }                              /* Opacity and transition was added to create the hover effect of the img */
 
 .gallery-item:hover .gallery-item-type {
-    opacity: 0.4;
+    opacity: 0.8;
   }                            /* Hover selector was applied to create the hover effect over the img */
 
 
@@ -211,7 +212,7 @@ body {
 
  
 .gallery-item:hover .gallery-image {
-    opacity: 0.4;
+    opacity: 0.8;
   }
   
 
@@ -231,7 +232,7 @@ body {
 
 
 .gallery-item:hover .gallery-item-info {
-    opacity: 1;
+    opacity: 0.8;
           
 }
 
@@ -250,34 +251,34 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 5px, dashed #7e7d7d;
-    border-color: #636161;
-    color: #7e7d7d;
-    border-spacing: 5px;
-    animation: spin 2s ease-in-out infinite ;  
+    border: 5px solid #7e7d7d;
+    border-top-color: transparent;
+    background-color: #fcf9f9;
+    animation: spin 1s ease-in-out infinite;  
     margin-left: 48%;
+    transform-origin: 50% 50%;
    
 }                                /* Animations and keyframes were used to create a circular rotation movement in order to make a buffering circle that shows the page is loading */
 
 @keyframes spin {
-    0% {transform: rotate(0deg); }
-    100% {transform: rotate(360deg); }
+
+    0% {
+       transform:rotate(0deg) ; }
+
+    100% {
+         transform:rotate(360deg) ; }
   }
 
 
 
-        @media (min-width: 375px) and (max-width: 767.98px) {
+        @media (min-width: 375px) and (max-width: 767.9px) {
         body {
         background-color: lightgreen;
         }
     }
      
+    
 
-        @media (min-width: 768px) and (max-width: 991.98px) {
-            body {
-                background-color: lightcoral;
-            }
-        }
     
 
  
