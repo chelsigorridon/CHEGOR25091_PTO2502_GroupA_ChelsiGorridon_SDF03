@@ -148,7 +148,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, minmax(50px, 1fr));
     gap: 5px;
-    max-width: 1200px;   
+    max-width: 1200px;  
+    min-width: 375px; 
                            
 }                          /* Set Div to Grid to create the grid layout inside main container */
 
@@ -265,9 +266,22 @@ body {
 
 
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) 
+        @media (min-width: 375px) and (max-width: 767.98px) {
+        body {
+        background-color: lightgreen;
+        }
+    }
+     
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            body {
+                background-color: lightcoral;
+            }
+        }
+    
+
  
-/* Required to create design responsive for most screens */
+/* Required to create responsive designs for most screens */
 
 
 
