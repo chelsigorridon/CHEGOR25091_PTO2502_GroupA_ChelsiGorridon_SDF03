@@ -4,9 +4,9 @@
 :root {
     --font-size: 10px;
     --offwhite: #fbfafa;
-    --font-family: "Open Sans", Arial, sans-serif;
+    --font-family: "Open Sans", Arial, sans-serif;  
         
-}
+}                             /* Used to style specified Content */
 
 *,
 *::before,
@@ -26,9 +26,8 @@ body {
 
 .img {
    display: block;
-  
-   
-}
+                
+}                         /* set Img to display block */
 
 
 .profile-image {
@@ -38,27 +37,26 @@ body {
     width: 300px;
     height: 300px;   
     object-fit: cover;
-    float: left;
+    float: left;            
     
-}
+}                         /* Added a Border around Profile image, float is used for the text to position next to the img*/
 
 
 
 .container {
     width: 60%;
     margin: 30px auto; 
-   
-}
+                        
+}                         /* The container is where our flexbox or grid will be situated in */
 
 
 
 .profile { 
-    display: contents;
+     display: contents;
      padding-bottom: 20px;
-     flex: 1;
-    
-    
-}
+     flex: 1;                
+                             
+}                       /* This is The Div that our contents will be in */
 
 .profile::after { 
     content: "";
@@ -75,22 +73,21 @@ body {
     flex-direction: row;
     margin-bottom: 50px;
     margin-top: 30px;
-    text-align: left;
-
-   
-}
+    text-align: left;                   
+                          
+}                        /* Used Flexbox to align Profile User settings with the username at the top of the page*/
 
 .btn-profile-edit-btn {
     border: 1px solid #7e7d7d;
     cursor: pointer;
     background-color: #fafafa;
     transition: 0.4s ease-in-out;
-       
-}
+                                   
+}                               /* Added a small transition to make button more noticeable */
 
 .btn-profile-edit-btn:hover {
     background-color: #bbbfbe;
-}
+}                                  /* Backround Colour for the button */ 
 
 .btn-profile-settings-btn {
      border: none;  
@@ -110,10 +107,8 @@ body {
     font-weight: lighter ;  
     margin-right: 15px;
     margin-top: 50px;
-    
-    
-    
-}
+                          
+}                          /* Basic Font used for Username */ 
 
 .profile-stats { 
     display: flex;
@@ -122,9 +117,8 @@ body {
     flex-direction: row;
     margin:auto;
     gap: 15px;
-    
-    
-}
+                             
+}                            /*Used Flexbox to align stats in a straight line, Margin used to create wide spaces between items*/
 
 .profile-stat-count {
     text-align: center;
@@ -145,14 +139,18 @@ body {
     font-weight: bold;
 }
 
+/* End of Top Section*/
+
+ 
+/* New Section*/
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, minmax(50px, 1fr));
     gap: 5px;
     max-width: 1200px;   
-
-}
+                           
+}                          /* Set Div to Grid to create the grid layout inside main container */
 
 .gallery-item {
         background: none;
@@ -164,7 +162,7 @@ body {
         position: relative;
         overflow: hidden;
        
-}
+}                          /* This Div is used for seperating content within the grid layout*/
 
 
 .gallery-item-type {
@@ -182,7 +180,7 @@ body {
     margin-left: 90%;
     margin-top: 5%;
      
-}
+}                               /*Flexbox was used to move position the contents in this divo */
 
 .gallery-item-type img {
     display: block;
@@ -192,11 +190,11 @@ body {
     transition: .5s ease; 
     opacity: 1; 
     
-}
+}                              /* Opacity and transition was added to create the hover effect of the img */
 
 .gallery-item:hover .gallery-item-type {
     opacity: 0.4;
-  }
+  }                            /* Hover selector was applied to create the hover effect over the img */
 
 
 
@@ -227,7 +225,9 @@ body {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-}
+}                                           /* Flexbox was used as well as opacity and transition to centre the text in the img while also having the hover effect */
+
+
 
 .gallery-item:hover .gallery-item-info {
     opacity: 1;
@@ -240,7 +240,7 @@ body {
       margin-right: 15px;
       margin-left: 15px;
       
-}
+}                                         /* Colour and margin added to change the look of the text */
 
 
 
@@ -256,7 +256,7 @@ body {
     animation: spin 2s ease-in-out infinite ;  
     margin-left: 48%;
    
-}
+}                                /* Animations and keyframes were used to create a circular rotation movement in order to make a buffering circle that shows the page is loading */
 
 @keyframes spin {
     0% {transform: rotate(0deg); }
@@ -265,7 +265,17 @@ body {
 
 
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape)
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) 
+ 
+/* Required to create design responsive for most screens */
+
+
+
+
+
+
+
+/* End  of bottom Section */ 
 
 
 
