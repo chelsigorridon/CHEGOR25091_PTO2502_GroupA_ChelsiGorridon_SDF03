@@ -38,8 +38,7 @@ body {
     height: 300px;   
     object-fit: cover;
     float: left;    
-    margin: 10px 10px;
-    padding: 20px 20px;
+    
               
     
 }                         /* Added a Border around Profile image, float is used for the text to position next to the img*/
