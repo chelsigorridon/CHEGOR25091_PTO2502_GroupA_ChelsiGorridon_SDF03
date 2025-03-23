@@ -38,8 +38,9 @@ body {
     height: 300px;   
     object-fit: cover;
     float: left;    
-       
-        
+    margin: 10px 10px;
+    padding: 20px 20px;
+              
     
 }                         /* Added a Border around Profile image, float is used for the text to position next to the img*/
 
@@ -73,10 +74,9 @@ body {
     display: flex;
     align-items: baseline;
     flex-direction:row ;
-    justify-content: center;
     margin-bottom: 50px;
     margin-top: 30px; 
-    margin-right: 25%;  
+    margin-right: 25%;   
                                            
 }                        /* Used Flexbox to align Profile User settings with the username at the top of the page*/
 
@@ -249,8 +249,7 @@ body {
 
 .gallery-item:hover .gallery-item-info {
     opacity: 0.9;
-    
-    
+       
           
 }
 
